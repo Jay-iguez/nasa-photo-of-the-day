@@ -1,21 +1,28 @@
+* {
+  border: 2px solid black;
+}
 
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  outline: 1rem solid blue;
+  height: 30%;
 }
 
 #mainImage {
   background-color:  #aeb6bf;
-  height: 60vh;
+  height: 60%;
 }
 
-#mainInfo {
+#flavourInfo {
   background-color:  #c39bd3 ;
   height: 20vh;
 }
 
 #appHeader {
  color: black;
+ font-size: 3rem;
 }
 
 .App-logo {
@@ -29,6 +36,9 @@
   }
 }
 
+#inPhoto {
+  
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

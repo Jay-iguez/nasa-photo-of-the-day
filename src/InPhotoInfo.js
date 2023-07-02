@@ -1,3 +1,9 @@
 export default function InPhotoInfo(props) {
-    return <p>In Photo Info</p>
+    return (
+        <>
+        <p id="inPhotoDate">Date</p>
+        <p id="inPhotoCopyRight">Copyright</p>
+        </>
+    )
+    
 }
