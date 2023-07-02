@@ -1,5 +1,6 @@
 * {
-  border: 2px solid black;
+  border: 1px solid black;
+  margin: 1rem;
 }
 
 .App {
@@ -10,14 +11,23 @@
   height: 30%;
 }
 
+
 #mainImage {
   background-color:  #aeb6bf;
-  height: 60%;
+  background-image: url("https://dog.ceo/img/dog-ceo-zine.jpg");
+  background-size: contain;
+  padding-top: 40rem;
+  padding-bottom: 25rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
+
 #flavourInfo {
+  display: flex;
+  justify-content: space-between;
   background-color:  #c39bd3 ;
-  height: 20vh;
+  height: 40%;
 }
 
 #appHeader {
@@ -36,8 +46,10 @@
   }
 }
 
-#inPhoto {
-  
+#inPhotoInfo {
+  width: 10rem;
+  display: flex;
+  flex-flow: column;
 }
 .App-header {
   background-color: #282c34;

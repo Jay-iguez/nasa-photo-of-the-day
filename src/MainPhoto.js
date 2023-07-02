@@ -6,8 +6,9 @@ export default function MainPhoto(props) {
     return (
         <>
         <div id="mainImage">
-            <img src="https://dog.ceo/img/dog-ceo-zine.jpg"></img>
-            <InPhotoInfo />
+            <div id="mainInPhotoParent">
+               <InPhotoInfo /> 
+            </div>
         </div>
         <SubPhotoInfo />
         <FlavourInfo />
