@@ -3,6 +3,15 @@
   margin: 1rem;
 }
 
+p {
+ font-size: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: system-ui;
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -16,8 +25,10 @@
   background-color:  #aeb6bf;
   background-image: url("https://dog.ceo/img/dog-ceo-zine.jpg");
   background-size: contain;
-  padding-top: 40rem;
-  padding-bottom: 25rem;
+  padding-top: 80rem;
+}
+
+#mainInPhotoParent {
   display: flex;
   justify-content: flex-end;
 }
@@ -30,10 +41,6 @@
   height: 40%;
 }
 
-#appHeader {
- color: black;
- font-size: 3rem;
-}
 
 .App-logo {
   height: 40vmin;
