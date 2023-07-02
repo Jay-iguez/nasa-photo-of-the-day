@@ -7,11 +7,11 @@ export default function MainPhoto(props) {
         <>
         <div id="mainImage">
             <div id="mainInPhotoParent">
-               <InPhotoInfo /> 
+               <InPhotoInfo nasaData={props.nasaData} /> 
             </div>
         </div>
-        <SubPhotoInfo />
-        <FlavourInfo />
+        <SubPhotoInfo nasaData={props.nasaData} />
+        <FlavourInfo dogData={props.dogData} />
         </>
     )
 }

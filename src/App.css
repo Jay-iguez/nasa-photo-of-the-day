@@ -25,7 +25,7 @@ h1 {
   background-color:  #aeb6bf;
   background-image: url("https://dog.ceo/img/dog-ceo-zine.jpg");
   background-size: contain;
-  padding-top: 80rem;
+  padding-top: 70%;
 }
 
 #mainInPhotoParent {
@@ -37,8 +37,8 @@ h1 {
 #flavourInfo {
   display: flex;
   justify-content: space-between;
-  background-color:  #c39bd3 ;
-  height: 40%;
+  background-color:  #c39bd3;
+  padding: 10rem 10rem;
 }
 
 
@@ -47,11 +47,6 @@ h1 {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 #inPhotoInfo {
   width: 10rem;
@@ -69,9 +64,23 @@ h1 {
   color: white;
 }
 
+#flavourInfoDogImage{
+  width: 45rem;
+  height: 45rem;
+  border-radius: 40%;
+  object-fit: cover;
+}
+
 .App-link {
   color: #61dafb;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 
 @keyframes App-logo-spin {
   from {
