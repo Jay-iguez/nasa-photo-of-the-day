@@ -1,5 +1,21 @@
+
 .App {
   text-align: center;
+  outline: 1rem solid blue;
+}
+
+#mainImage {
+  background-color:  #aeb6bf;
+  height: 60vh;
+}
+
+#mainInfo {
+  background-color:  #c39bd3 ;
+  height: 20vh;
+}
+
+#appHeader {
+ color: black;
 }
 
 .App-logo {
