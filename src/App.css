@@ -37,8 +37,14 @@ h1 {
 #flavourInfo {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color:  #c39bd3;
-  padding: 10rem 10rem;
+  padding: 6rem 6rem;
+}
+
+
+#flavourInfoText {
+  width: 100%
 }
 
 
@@ -65,10 +71,10 @@ h1 {
 }
 
 #flavourInfoDogImage{
-  width: 45rem;
-  height: 45rem;
-  border-radius: 40%;
-  object-fit: cover;
+  width: 35rem;
+  height: 35rem;
+  /*border-radius: 50%;*/
+  object-fit: contain;
 }
 
 .App-link {

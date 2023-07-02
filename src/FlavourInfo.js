@@ -20,10 +20,10 @@ export default function FlavourInfo(props) {
 
     return (
         <div id="flavourInfo">
-          <img id="flavourInfoDogImage" src={props.dogData.message}></img>
-          <p id="flavourInfoText">{
-            dogQuotes[Math.round((Math.random() * dogQuotes.length))]
-          }</p>  
+            <img id="flavourInfoDogImage" src={props.dogData.message}></img>
+            <p id="flavourInfoText">{
+            dogQuotes[Math.floor((Math.random() * dogQuotes.length))]
+            }</p>  
         </div>
     )
 }
