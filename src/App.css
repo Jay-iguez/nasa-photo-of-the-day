@@ -30,10 +30,15 @@ footer, header, hgroup, menu, nav, section {
   margin: 1rem;
   padding: .5rem;
   max-width: 100%;
+  
+}
+
+#root, #appHeader, #subPhotoTitle, #subPhotoExplanation, #leadingFlavourInfo, #flavourInfo {
+  border: 1rem solid #5d6d7e;
 }
 
 body {
-  background-color: #e5e7e9;
+  background-color:  #d7dbdd   ;
 }
 
 p {
@@ -42,6 +47,7 @@ p {
 
 h1 {
   font-size: 6rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -104,7 +110,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color:  #c39bd3;
+  background-color: #95a5a6  ;
   margin: 2rem;
   padding: 1rem;
 }
