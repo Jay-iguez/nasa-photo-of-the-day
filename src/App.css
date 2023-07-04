@@ -57,16 +57,6 @@ h2 {
 }
 
 
-#mainImage {
-  background-color:  #aeb6bf;
-  background-image: url("https://cdn.theatlantic.com/thumbor/4yvwK5FFj-1aC7UCTkbAgt5NIY4=/1x0:2499x1405/750x422/media/img/mt/2020/12/HUBBLE_opener_01/original.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 50%;
-  margin: 2rem 1%;
-  display: flex;
-  justify-content: flex-end;
-}
 
 #leadingFlavourInfo {
   margin: 2rem;
