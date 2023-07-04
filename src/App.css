@@ -1,65 +1,98 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 * {
   border: 1px solid black;
   margin: 1rem;
+  padding: .5rem;
+  max-width: 100%;
+}
+
+body {
+  background-color: #e5e7e9;
 }
 
 p {
- font-size: 2rem;
+ font-size: 4rem;
 }
 
 h1 {
-  font-size: 4rem;
-  font-family: system-ui;
+  font-size: 6rem;
 }
 
-.App {
+h2 {
+  font-size: 4rem;
+}
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 30%;
+  margin: 2rem 10%;
 }
 
 
 #mainImage {
   background-color:  #aeb6bf;
-  background-image: url("https://dog.ceo/img/dog-ceo-zine.jpg");
-  background-size: contain;
-  padding-top: 70%;
-}
-
-#mainInPhotoParent {
+  background-image: url("https://cdn.theatlantic.com/thumbor/4yvwK5FFj-1aC7UCTkbAgt5NIY4=/1x0:2499x1405/750x422/media/img/mt/2020/12/HUBBLE_opener_01/original.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+  margin: 2rem 1%;
   display: flex;
   justify-content: flex-end;
 }
 
-
-#flavourInfo {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color:  #c39bd3;
-  padding: 6rem 6rem;
+#leadingFlavourInfo {
+  margin: 2rem;
+  padding: 1rem;
 }
 
-
-#flavourInfoText {
-  width: 100%
-}
-
-
-.App-logo {
+.header-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-
 #inPhotoInfo {
-  width: 10rem;
   display: flex;
   flex-flow: column;
+  color:  #fbfcfc ;
 }
-.App-header {
+
+#subPhotoInfo {
+  margin: 2rem 8%;
+}
+
+#subPhotoInfo p {
+  margin: 2rem 0;
+}
+
+.header-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -75,6 +108,18 @@ h1 {
   height: 35rem;
   /*border-radius: 50%;*/
   object-fit: contain;
+}
+
+#flavourInfo {
+  display: flex;
+  justify-content: space-between;
+  background-color:  #c39bd3;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+#flavourInfo p, img {
+  padding: 1rem 2rem;
 }
 
 .App-link {

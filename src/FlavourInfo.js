@@ -19,11 +19,17 @@ export default function FlavourInfo(props) {
   ];
 
     return (
+      <>
+      <div id="leadingFlavourInfo">
+      <h2>The Astronaut Dog below says:</h2>
+      </div>
         <div id="flavourInfo">
             <img id="flavourInfoDogImage" src={props.dogData.message}></img>
             <p id="flavourInfoText">{
             dogQuotes[Math.floor((Math.random() * dogQuotes.length))]
             }</p>  
         </div>
+      </>
+      
     )
 }

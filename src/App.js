@@ -43,7 +43,7 @@ function App() {
 
   return (
     <>
-    <div className="App">
+    <div className="header">
       <h1 id="appHeader">Jayden's / React's - Very Radical N' "KEWL" NASA Photo Of The Day!</h1>
     </div>
       <MainPhoto nasaData={nasaData} dogData={dogData} />
