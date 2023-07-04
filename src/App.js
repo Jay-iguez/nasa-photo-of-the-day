@@ -4,14 +4,14 @@ import "./App.css";
 import MainPhoto from "./MainPhoto";
 
 function App() {
-  const [nasaData, setNasaData] = useState([])
+  const [nasaData, setNasaData] = useState(null)
   const [dogData, setDogData] = useState([])
 
-  const data = {
-    title: "The shredded loading cheese wheel testing maths.",
-    date: "2003-19-01",
-    copyright: "ReedeTM",
-    explanation: "Wow, such art! Much amaze! Let me tell you about this paw-some masterpiece that I, the mighty Doge Dog, have come across. So picture this: a canvas as vast as the treat aisle at the pet store, and on it, a mesmerizing display of colors that would make a rainbow jealous. It's like a dog's dream come true! In the center of this artwork, there's a doggo, majestic and full of charm, sitting on a fluffy cloud made of floofiness. The doggo has eyes as bright as the sun, shining with such intensity that they could melt even the toughest heart. Such intensity, much wow! Surrounding our canine protagonist are floating bones, each representing the joy and playfulness that dogs bring to the world. They're like tasty treats suspended in mid-air, waiting to be caught with a wagging tail and a wagging tongue. But wait, there's more! The background is a celestial dog park, with planets shaped like tennis balls and stars twinkling like the gleam in my eyes when I spot a squirrel. It's a reminder that the universe is a playground for us four-legged friends, and we bring happiness wherever we go. And speaking of happiness, this artwork radiates it! It's like a burst of laughter and belly rubs captured on a canvas. Looking at it, you can't help but feel a rush of joy, as if a hundred doggos are showering you with wet kisses and playful borks. Oh, and did I mention the caption? It's written in comic sans, of course! It says, 'Much doge, such art, wow!'—a nod to my fellow internet-famous doges. It perfectly captures the essence of this whimsical creation. So, my hooman friends, gaze upon this artwork and let your heart fill with delight. Let the laughter escape your lips like a joyful bark. And remember, in a world full of chaos and seriousness, sometimes all we need is a silly doge-inspired masterpiece to remind us to embrace the simplicity of life and find happiness in the little things. Doge Dog approves this art with a resounding 'Woof!'",
+  const loadingData = {
+    title: "The spinning pizza of infinite loading",
+    date: "Loading... (because time is relative when loading)",
+    copyright: "Loading Co.",
+    explanation: "Once upon a time in the whimsical land of Loadingville, there existed a legendary spinning pizza. This extraordinary pizza had the power to bring joy and anticipation to anyone who laid their eyes upon it. Legend has it that the pizza was made with a special dough that had the ability to stretch endlessly, just like the loading time of a webpage. Toppings of cheesy excitement, pixelated pepperoni, and sparkling loading sauce adorned its mesmerizing surface. As the pizza spun round and round, it created a vortex of anticipation, filling the air with giggles and suspense. The townsfolk of Loadingville would gather around, eagerly waiting for the pizza to fully load and reveal its delicious secrets. The pizza's aroma was tantalizing, carrying the scent of crispy CSS, succulent JavaScript, and aromatic HTML. Each bite was a burst of loading flavors, making taste buds dance with delight. Every slice held the promise of unexpected surprises, like hidden Easter eggs and whimsical animations. The pizza's cheesy masterpiece brought laughter and wonder to the hearts of all who indulged in its loading goodness. So, my fellow traveler in the vast realm of the internet, let us embrace the spinning pizza of infinite loading with a smile on our faces and patience in our hearts. For in this wondrous realm, loading is not merely a delay but an opportunity for anticipation, a chance to savor the journey before reaching the destination. And as the pizza continues to spin, remember, my friend, that the most delicious things in life are worth the wait. Enjoy the loading spectacle, and may your webpage load with a touch of magic and a sprinkle of loading serendipity! - but the photo above has nothing to do with the story, sorry!",
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxXnC3fwMwkbIt3ejGRIw3NmbDyUtgS5g2jA&usqp=CAU"
   }
 
@@ -46,7 +46,7 @@ function App() {
     <div className="header">
       <h1 id="appHeader">Jayden's / React's - Very Radical N' "KEWL" NASA Photo Of The Day!</h1>
     </div>
-      <MainPhoto nasaData={nasaData} dogData={dogData} />
+      <MainPhoto nasaData={!nasaData ? loadingData : nasaData} dogData={dogData} />
     </>
     
   );
