@@ -1,3 +1,5 @@
+import styled from 'styled-components'
+
 export default function FlavourInfo(props) {
 
   const dogQuotes = [
@@ -18,11 +20,20 @@ export default function FlavourInfo(props) {
     "Woofers gonna woof! This photo deserves a howl of appreciation! It's like a loyal companion, evoking fond memories and bringing warmth to your heart. Let's celebrate the beauty of life!",
   ];
 
+    const LeadingFlavourInfo = styled.div`
+      margin: 2rem;
+      padding: 1rem;
+      border: 1rem solid grey;
+      h2 {
+        font-weight: bold;
+      }
+    `
+
     return (
       <>
-      <div id="leadingFlavourInfo">
-      <h2 style={{ fontWeight: 'bold'}}>The Astronaut Dog below says:</h2>
-      </div>
+      <LeadingFlavourInfo>
+      <h2>The Astronaut Dog Below Says:</h2>
+      </LeadingFlavourInfo>
         <div id="flavourInfo">
             <img id="flavourInfoDogImage" src={props.dogData.message}></img>
             <p id="flavourInfoText">{
