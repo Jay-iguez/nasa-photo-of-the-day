@@ -8,7 +8,25 @@ function App() {
   const [nasaData, setNasaData] = useState(null)
   const [dogData, setDogData] = useState([])
 
-  
+  const StyledAppHeader = styled.h1`
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    border-bottom: 1rem solid grey;
+  `
+  const StyledAppHeaderName = styled(StyledAppHeader)`
+    font-size: 8rem;
+    border: 1rem dashed grey;
+  `
+
+  const StyledAppHeaderText = styled(StyledAppHeader)`
+    border: 1rem dashed grey;
+    padding: 3rem 0;
+  `
 
   const loadingData = {
     title: "The spinning pizza of infinite loading",
@@ -44,9 +62,9 @@ function App() {
 
   return (
     <>
-    <div className="header">
-      <h1 id="appHeader">Jayden's / React's - Very Radical N' "KEWL" NASA Photo Of The Day!</h1>
-    </div>
+    <StyledAppHeader>
+      <StyledAppHeaderName>Jayden's / React's</StyledAppHeaderName><StyledAppHeaderText>- Very Radical N' "KEWL" NASA Photo Of The Day!</StyledAppHeaderText>
+    </StyledAppHeader>
       <MainPhoto nasaData={!nasaData ? loadingData : nasaData} dogData={dogData} />
     </>
     

@@ -8,12 +8,12 @@ import spacePhoto from './ascii-art.png'
 const StyledMainDiv = styled.div`
 background-color:  #27004F;
 background-image: url(${spacePhoto});
-opacity: 10%;
+opacity: 90%;
 color: white;
 `
-
-const mainBackground = document.querySelector("body")
-mainBackground.style.background = " #650cab "
-
+const rootElement = document.querySelector("#root")
+rootElement.style.border = "2rem ridge #9e9b8b  "
+rootElement.style.boxShadow = "inset 1px 1px 150px #000"
 
 ReactDOM.render(<StyledMainDiv><App /></StyledMainDiv>, document.getElementById("root"));
+
