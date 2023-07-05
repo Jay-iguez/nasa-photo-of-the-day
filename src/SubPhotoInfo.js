@@ -1,8 +1,24 @@
+import styled from 'styled-components'
+
 export default function SubPhotoInfo(props) {
+
+    const SubPhotoInfo = styled.div`
+    margin: 2rem 8%;
+    p {
+        margin: 2rem 0;
+    }
+    `
+
+
+    const SubPhotoBold = styled.p`
+    font-weight: bold;
+    font-size: 4rem;
+    `
+
     return (
-        <div id="subPhotoInfo">
-            <p id="subPhotoTitle"><span style={{ fontWeight: 'bold', fontSize: '4rem'}}>Title: </span>{props.nasaData.title}</p>
-            <p id="subPhotoExplanation"><span style={{ fontWeight: 'bold', fontSize: '4rem'}}>Explanation: </span>{props.nasaData.explanation}</p>
-        </div>
+        <SubPhotoInfo>
+            <p id="subPhotoTitle"><SubPhotoBold>Title:</SubPhotoBold>{props.nasaData.title}</p>
+            <p id="subPhotoExplanation"><SubPhotoBold>Explanation: </SubPhotoBold>{props.nasaData.explanation}</p>
+        </SubPhotoInfo>
     )
 }
